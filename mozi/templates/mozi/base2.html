@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load cloudinary %}
+{% load staticfiles %}
+<html lang="pt">
+	<head>
+		<title>Tudo em um Botucatu</title>
+		<!--
+		<div class="logo">
+			<img src="{% static 'image/logo.png' %}" alt="logo">
+		</div>
+		-->
+		<link rel="stylesheet" href="/static/css/botucatu.css">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{ post.titulo }}">
+		<meta property="og:description" content="{{ post.apresentacao }}" >
+		<meta property="og:image" content="{% cloudinary_url post.imagem %}" > 
+		<meta property="og:url" content="{{ request.build_absolute_uri }}">
+	</head>
+	<body>
+		<title>Bem vindos à Petmania, o lugar da mania de Pets</title><!-- Pensar numa maneira de tornar essa tag editável a qualquer momento pelo dono do app --> 
+		<div class='btns'>
+			<table>
+				<tr>
+					<td><h2><a href="{% url 'mozix:comida' %}"><button class='btn1'>Comida</button></a></h2></td>
+					<td><h2><a href="{% url 'mozix:bebidas' %}"><button class='btn2'>Bebidas</button></a></h2></td>
+					<td><h2><a href="{% url 'mozix:petiscos' %}"><button class='btn3'>Petiscos</button></h2></a></td>
+					<td><h2><a href="{% url 'mozix:salgados' %}"><button class='btn4'>Salgados</button></h2></a></td>
+					<td><h2><a href="{% url 'mozix:assados' %}"><button class='btn4'>Assados</button></h2></a></td>
+				</tr>
+			</table>
+			<center><tr class='esse'><h1>Por onde começar?</h1></tr></center>
+		{% block content %}
+		{% endblock %}	
+	</body>
