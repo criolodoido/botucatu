@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='mozix'),
+	url(r'^mozi/(?P<pk>[0-9]+)/$', views.post_detail, name='detalhe'),#mudancas aqui"
 	url(r'^doces$', views.doces, name='comida'),
 	url(r'^bebidas$', views.bebidas, name='bebidas'),
 	url(r'^petiscos$', views.petiscos, name='petiscos'),
