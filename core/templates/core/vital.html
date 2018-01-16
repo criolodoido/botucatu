@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	<div class='imagem'>
+		<center><img src="{% static 'images/ferroviaria.jpg' %}" alt="Ferroviaria!"></center>
+	</div>
+	<center><p><h1>Lojas disponíveis:</h1></p></center>
+	<div class='lojas'>
+		<center><p><h2>Petmania</p><a href="{% url 'petmania:petmania' %}"><button>Entrar</button></h2></center>
+
+		<!-- Fazer aqui um layout pra exibir a loja petmania, do Tonhão, assim como depois em outra página a loja do Mozi -->
+{% endblock %}
