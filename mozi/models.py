@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 
 class Mozix(models.Model):
 	TIPOS = (
-		('DOCE', 'Doces'),
+		('DOCE', 'Comidas'),
 		('REFRI', 'Bebidas'),
 		('PETI', 'Petiscos'),
 		('SALG', 'Salgados'),

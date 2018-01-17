@@ -87,3 +87,21 @@ table{
 .imagem img{
 	border-radius: 30%;
 }
+
+.ini img{
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted;
+	border-width: 5px;
+	float: top;
+	overflow: auto;
+}
+
+.post img{
+	border-radius: 30%;
+	display: block;
+	max-width: 80%;
+	height: auto;
+}
