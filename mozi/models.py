@@ -27,4 +27,4 @@ class Mozix(models.Model):
 
 	def get_absolute_url(self):
 		#return reverse("detalhe", kwargs={"pk": self.pk})
-		return "mozi/%s" %(self.pk)
+		return "post/%s" %(self.pk)
