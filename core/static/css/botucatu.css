@@ -1,5 +1,5 @@
 body{
-	background: linear-gradient(darkblue, lightblue);  
+	background: white;  
 	/*background-color: #000; */
 	background-attachment: fixed;
 	min-height: 100%;
@@ -44,7 +44,7 @@ h1{
 }
 
 .ini a:hover{
-	color: white;
+	color: darkblue;
 }
 
 .btns{
