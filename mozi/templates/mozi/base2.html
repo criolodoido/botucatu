@@ -9,7 +9,10 @@
 			<img src="{% static 'image/logo.png' %}" alt="logo">
 		</div>
 		-->
-		<link rel="stylesheet" href="core/static/css/botucatu.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+		<link rel="stylesheet" href="/static/css/botucatu.css">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="{{ post.titulo }}">
 		<meta property="og:description" content="{{ post.apresentacao }}" >
@@ -17,7 +20,7 @@
 		<meta property="og:url" content="{{ request.build_absolute_uri }}">
 	</head>
 	<body>
-		<title>Bem vindos à Petmania, o lugar da mania de Pets</title><!-- Pensar numa maneira de tornar essa tag editável a qualquer momento pelo dono do app --> 
+		<title>Bem vindos à Mozix & Comix!</title><!-- Pensar numa maneira de tornar essa tag editável a qualquer momento pelo dono do app --> 
 		<div class='btns'>
 			<table>
 				<tr>
@@ -28,7 +31,7 @@
 					<td><h2><a href="{% url 'mozix:assados' %}"><button class='btn4'>Assados</button></h2></a></td>
 				</tr>
 			</table>
-			<center><tr class='esse'><h1>Por onde começar?</h1></tr></center>
+			
 		{% block content %}
 		{% endblock %}	
 	</body>

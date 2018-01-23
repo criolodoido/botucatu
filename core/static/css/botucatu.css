@@ -1,3 +1,4 @@
+* {margin:0;padding:0;}
 body{
 	background: white;  
 	/*background-color: #000; */
@@ -17,6 +18,11 @@ header {
 }
 
 
+div.body-content{
+  /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+  margin-bottom: 40px;
+}
+
 table{
 	position: relative;
     margin: 10px auto;
@@ -27,8 +33,8 @@ table{
     text-align: center;
 }
 
-h1, h3{
-	font-family: 'Luckiest Guy', cursive;
+h1, h2{
+	font-family: 'Luckiest Guy';
 	margin: 0 auto;
 	text-decoration:none;  
 	color: black;
@@ -115,6 +121,14 @@ h1, h3{
 	height: 70px;
 }
 
+.vcaqui{
+ 	background: linear-gradient(SandyBrown, red);
+	border-radius: 60%;
+	border-color: black;
+	color: white;
+	width: 25%;
+	height: 100px;
+ }
 .imagem img{
 	border-radius: 30%;
 }
@@ -146,5 +160,32 @@ div.rodape{
 	border-right: 20px solid red;
 	border-bottom: 40px solid transparent;
     border-left: 20px solid red; 
-
+  	bottom: 0;
+  	left: 0;
+  	height: 15%;
+  	position: fixed;
+  	width: 100%;
  }
+ /*
+ .btns p{
+ 	padding-right: 30px;
+ }
+ Não deu certo, minha tentativa de centralizar o texto da página inicial
+ */
+/*
+ footer{
+ 	width: 1%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+ }
+ */
+ 
+.valores h3{
+	border: 2px solid;
+	color: black;
+	margin: 0 auto;
+	border-color: black red black red;
+
+}

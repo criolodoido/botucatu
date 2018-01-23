@@ -5,11 +5,12 @@ from cloudinary.models import CloudinaryField
 
 class Mozix(models.Model):
 	TIPOS = (
-		('DOCE', 'Comidas'),
-		('REFRI', 'Bebidas'),
+		('COMIDA', 'Comidas'),
+		('BEBIDA', 'Bebidas'),
 		('PETI', 'Petiscos'),
 		('SALG', 'Salgados'),
 		('ASSA', 'Assados'),
+		('UNICA', 'Unica')
 	)
 
 	tipos = models.CharField(max_length=6, choices=TIPOS, null=False)

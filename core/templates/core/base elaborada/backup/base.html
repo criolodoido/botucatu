@@ -9,8 +9,6 @@
 			<img src="{% static 'image/logo.png' %}" alt="logo">
 		</div>
 		-->
-		<script src="{% static "js/jquery-1.11.1.js" %}"></script>
-		<script src="{% static "js/rango-jquery.js" %}"></script>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -19,10 +17,8 @@
 	</head>
 	<header class="opener">
 		<title>Sejam bem vindos, e que possamos ajudar-te</title> 
-		<div class="texto">
-			<center><br><h1 style="text_align:center;">BotucaNet</h1><br></center><!-- Pensar em uma animação bacana com css a ser inserida aqui -->
-			<h2 style="text_align:center;">Não podemos levâ-lo aos melhores comércios de Botucatu,<br></h2></center><p><center><h2 style="text_align:center;"> então trouxemos o que eles têm de melhor até você!</h2></center></p>
 		<div class='btns'>
+			<p class='esse'><center><br><h1>BotucaNet</h1><br></center></p><p><center><h3>Não podemos levâ-lo aos melhores comércios de Botucatu,<br></h3></center><p><center><h3> então trouxemos o que eles têm de melhor até você!</h3></center></p>
 			<table>
 				<tr>
 					<td><h2><a href="{% url 'core:vital' %}"><button class='btn1'>Av.Vital Brasil</button></a></h2></td>
@@ -36,12 +32,7 @@
 		{% block content %}
 		{% endblock %}	
 	</body>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 	<div class="rodape">
-		<footer><center><h2><a href="{% url 'core:parte' %}" target="_blank"><button class='vcaqui'><br>Seu Comércio aqui!<br><br><br><br></button></a></h2></center></footer>
+		<footer></footer>
 	</div>
 </html>

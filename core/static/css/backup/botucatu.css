@@ -145,3 +145,10 @@ div.rodape button{
 	width: 100%;
 	height: 70px;
 }
+footer{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+}

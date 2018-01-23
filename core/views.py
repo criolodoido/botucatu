@@ -18,3 +18,6 @@ def centro(request):
 
 def domlucio(request):
 	return render(request, 'core/domlucio.html', {})
+
+def facaparte(request):
+	return render(request, 'core/facaparte.html', {})

@@ -7,4 +7,5 @@ urlpatterns = [
 	url(r'^bairro/$', views.bairro, name='bairro'),
 	url(r'^centro/$', views.centro, name='centro'),
 	url(r'^domlucio/$', views.domlucio, name='domlucio'),
+	url(r'^facaparte/$', views.facaparte, name='parte'),
 ]

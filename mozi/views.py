@@ -4,7 +4,7 @@ from django.utils import timezone
 from .models import Mozix
 
 def index(request):
-	objetos = Mozix.objects.filter(datapublicacao__lte=timezone.now()).order_by('-datapublicacao')
+	objetos = Mozix.objects.filter(tipos='UNICO', datapublicacao__lte=timezone.now()).order_by('-datapublicacao')
 	return render(request, 'mozi/index.html', {'objetos': objetos})	
 
 def post_detail(request, pk):
@@ -31,3 +31,7 @@ def salgados(request):
 def assados(request):
 	objetos = Mozix.objects.filter(tipos='ASSA')
 	return render(request, 'mozi/index.html', {'objetos': objetos})
+
+#modificacao
+
+
