@@ -2,18 +2,19 @@
 {% load cloudinary %}
 {% load staticfiles %}
 {% block content %}
-	<div class="texto">
-		<center><br><h1 style="text_align:center;">Mozix & Comix</h1><br></center><center><h2> Acompanhe aqui nossas ofertas e novidades!</h2></center>
+
 	{% for objeto in objetos %}
-            <div class= 'ini'>
-                <br>
-                <br>
-                <center><h3><p>Publicado em:{{ objeto.datapublicacao }}</p></h3><center>
-                <center><h1><a href="{{ objeto.get_absolute_url }}">{{ objeto.titulo }}</a></h1></center>
-                <center><img>{% cloudinary objeto.imagem %}</center>
-                <center><p><h2>{{ objeto.apresentacao }}</h2></p></center>
-                <br>
-                <br>
-            </div>
-        {% endfor %}
+	            <div class= 'ini'>
+	            	<br>
+	            	<br>
+	                <center><h2><p>Publicado em:{{ objeto.datapublicacao }}</p></h2><center>
+	                <center><h1><a href="{{ objeto.get_absolute_url }}">{{ objeto.titulo }}</a></h1></center>
+	                <center><img>{% cloudinary objeto.imagem %}</center>
+	                <center><p><h2>{{ objeto.apresentacao }}</h2></p></center>
+	                <br>
+	                <br>
+	            </div>
+	{% endfor %}
 {% endblock %}
+
+
