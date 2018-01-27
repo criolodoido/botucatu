@@ -202,3 +202,17 @@ div.rodape{
 	border-color: black red black red;
 
 }
+div.rodape2 {
+	margin: auto;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
+.voltar{
+	background-image:url('home.png');
+	width: 10%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+}
