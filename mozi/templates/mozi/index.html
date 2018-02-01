@@ -3,18 +3,19 @@
 {% load staticfiles %}
 {% block content %}
 
-	{% for objeto in objetos %}
+	{% for mozi in mozis %}
 	            <div class= 'ini'>
 	            	<br>
 	            	<br>
-	                <center><h2><p>Publicado em:{{ objeto.datapublicacao }}</p></h2><center>
-	                <center><h1><a href="{{ objeto.get_absolute_url }}">{{ objeto.titulo }}</a></h1></center>
-	                <center><img>{% cloudinary objeto.imagem %}</center>
-	                <center><p><h2>{{ objeto.apresentacao }}</h2></p></center>
+	                <center><h2><p>Publicado em:{{ mozi.datapublicacao }}</p></h2><center>
+	                <center><h1><a href="{{ mozi.get_absolute_url }}">{{ mozi.titulo }}</a></h1></center>
+	                <center><img>{% cloudinary mozi.imagem %}</center>
+	                <center><p><h2>{{ mozi.apresentacao }}</h2></p></center>
 	                <br>
 	                <br>
 	            </div>
 	{% endfor %}
+
 {% endblock %}
 
 

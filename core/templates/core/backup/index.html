@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+	<div class='ini'>
+	<center><h1><i>Petmania - Vital Brasil</i></h1></center>
+		{% for petmania in petmanias %}
+                
+                <br>
+                <center><h2><p>Publicado em:{{ petmania.datapublicacao }}</p></h2><center>
+                <center><h2><a href="{{ petmania.get_absolute_url }}">{{ petmania.titulo }}</a></h2></center>
+                <center><img>{% cloudinary petmania.imagem %}</center>
+                <center><p><h2>{{ petmania.apresentacao }}</h2></p></center>
+                <br>
+                
+        {% endfor %}
+<footer class='fim'></footer><!-- Tentar fazer uma faixa pra delimitar o fim de uma loja -->
+        <br>
+        <br>
+    </div>
+
+
+
+	
+	<div class='ini2'>
+	<center><h1><i>Mozix & Comix - Av. Dom Lucio</i></h1></center>
+		{% for mozi in mozis %}
+		    
+		        <br>
+		        <center><h2><p>Publicado em:{{ mozi.datapublicacao }}</p></h2><center>
+		        <center><h1>{{ mozi.titulo }}</a></h1></center>
+		        <center><img>{% cloudinary mozi.imagem %}</center>
+		        <center><p><h2>{{ mozi.apresentacao }}</h2></p></center>
+		        <br>
+		            
+		{% endfor %}
+		<br>
+		<br>
+	</div>
+{% endblock %}

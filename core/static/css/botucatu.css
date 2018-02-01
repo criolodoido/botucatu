@@ -56,6 +56,10 @@ h1, h2{
 	color: black;
 }
 
+.ini h1{
+	color: blue;
+}
+
 .ini a{
 	color: black;
 	margin: 0 auto;
@@ -215,4 +219,23 @@ div.rodape2 {
 	height: 100%;
 	background-color: transparent;
 	border: none;
+}
+
+.ini2 h2{
+	color: black;
+}
+
+.ini2 h1{
+	color: blue;
+}
+
+.ini2 img{
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted;
+	border-width: 5px;
+	float: top;
+	overflow: auto;
 }

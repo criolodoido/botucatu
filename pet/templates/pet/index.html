@@ -2,14 +2,14 @@
 {% load cloudinary %}
 {% load staticfiles %}
 {% block content %}
-	{% for objeto in objetos %}
+	{% for petmania in petmanias %}
             <div class= 'ini'>
                 <br>
                 <br>
-                <center><h2><p>Publicado em:{{ objeto.datapublicacao }}</p></h2><center>
-                <center><h1><a href="{{ objeto.get_absolute_url }}">{{ objeto.titulo }}</a></h1></center>
-                <center><img>{% cloudinary objeto.imagem %}</center>
-                <center><p><h2>{{ objeto.apresentacao }}</h2></p></center>
+                <center><h2><p>Publicado em:{{ petmania.datapublicacao }}</p></h2><center>
+                <center><h1><a href="{{ petmania.get_absolute_url }}">{{ petmania.titulo }}</a></h1></center>
+                <center><img>{% cloudinary petmania.imagem %}</center>
+                <center><p><h2>{{ petmania.apresentacao }}</h2></p></center>
                 <br>
                 <br>
             </div>
