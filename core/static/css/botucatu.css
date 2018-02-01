@@ -183,6 +183,11 @@ div.rodape{
   	position: fixed;
   	width: 100%;
  }
+
+ .rodape button{
+ 	position: fixed;
+ 	bottom: 0;
+ }
  /*
  .btns p{
  	padding-right: 30px;
@@ -211,6 +216,7 @@ div.rodape2 {
 	width: 100%;
 	bottom: 0;
 	position: fixed;
+	
 }
 
 .voltar{

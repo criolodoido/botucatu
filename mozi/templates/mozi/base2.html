@@ -31,12 +31,15 @@
 					<td><h2><a href="{% url 'mozix:assados' %}"><button class='btn4'>Assados</button></h2></a></td>
 				</tr>
 			</table>
+		<div class='rodape2'>
+			<footer>
+				<h2><a href="{% url 'core:index' %}"><button class='voltar'><br><br><br>&nbsp;</button></a></h2>
+			</footer>
+		</div>
+
 			
 		{% block content %}
 		{% endblock %}	
+	
+		
 	</body>
-	<div class='rodape2'>
-		<footer>
-			<h2><a href="{% url 'core:index' %}"><button class='voltar'><br><br><br>&nbsp;</button></a></h2>
-		</footer>
-	</div>
